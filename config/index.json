@@ -1,0 +1,202 @@
+{
+  "orgs": [
+    "unifiedjs",
+    "remarkjs",
+    "rehypejs",
+    "retextjs",
+    "redotjs",
+    "micromark",
+    "syntax-tree",
+    "vfile"
+  ],
+  "orgStructure": {
+    "packages": ":org/*",
+    "humans": {
+      "member": ":orgTeam/!emeritus",
+      "admin": "core/!emeritus",
+      "owner": ":orgTeam/lead"
+    }
+  },
+  "teamStructure": [
+    {
+      "name": "mergers",
+      "description": "@:org members with read-only rights",
+      "permissions": "read-only",
+      "humans": ":orgTeam/write"
+    },
+    {
+      "name": "releasers",
+      "description": "@:org members with read-write rights",
+      "permissions": "read-write",
+      "humans": ":orgTeam/admin"
+    }
+  ],
+  "npm": {
+    "ahmadawais": "mrahmadawais",
+    "BarryThePenguin": "barrythepenguin",
+    "ChristianMurphy": "christianmurphy",
+    "ChristopherBiscardi": "biscarch",
+    "fazouane-marouane": "fazouane-marouane",
+    "Jarred-Sumner": null,
+    "johno": "johno",
+    "jxnblk": "jxnblk",
+    "kmck": "kmck",
+    "komaeda": "komaeda",
+    "mrmrs": "mrmrs",
+    "Murderlon": "murderlon",
+    "rauchg": "rauchg",
+    "RichardLitt": "richardlitt",
+    "Rokt33r": "rokt33r",
+    "silvenon": "silvenon",
+    "sobolevn": "sobolevn",
+    "ticky": "ticky",
+    "timneutkens": "timneutkens",
+    "vhf": "vhf",
+    "wooorm": "wooorm",
+    "zcei": "zcei",
+    "zeke": "zeke",
+    "zeusdeux": "zeusdeux"
+  },
+  "teams": [
+    {
+      "name": "core",
+      "scope": "*/*",
+      "members": {
+        "ChristianMurphy": "admin",
+        "johno": "admin",
+        "Murderlon": "admin",
+        "RichardLitt": "emeritus",
+        "wooorm": "admin",
+        "zcei": "emeritus"
+      }
+    },
+    {
+      "name": "moderation",
+      "scope": "*/*",
+      "members": {
+        "komaeda": "admin",
+        "RichardLitt": "admin"
+      }
+    },
+    {
+      "name": "unified",
+      "scope": "unifiedjs/*",
+      "lead": "wooorm",
+      "members": {
+        "ChristianMurphy": "write",
+        "johno": "write",
+        "Murderlon": "write",
+        "vhf": "emeritus",
+        "wooorm": "admin",
+        "zcei": "emeritus",
+        "zeusdeux": "emeritus"
+      }
+    },
+    {
+      "name": "remark",
+      "scope": "remarkjs/*",
+      "lead": "wooorm",
+      "members": {
+        "BarryThePenguin": "write",
+        "ChristianMurphy": "write",
+        "fazouane-marouane": "write",
+        "johno": "admin",
+        "kmck": "write",
+        "Murderlon": "write",
+        "Rokt33r": "write",
+        "sobolevn": "emeritus",
+        "vhf": "write",
+        "wooorm": "admin",
+        "zeke": "write",
+        "zeusdeux": "emeritus"
+      }
+    },
+    {
+      "name": "rehype",
+      "scope": "rehypejs/*",
+      "lead": "wooorm",
+      "members": {
+        "ChristianMurphy": "write",
+        "johno": "write",
+        "kmck": "write",
+        "Murderlon": "write",
+        "vhf": "emeritus",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "retext",
+      "scope": "retextjs/*",
+      "lead": "wooorm",
+      "members": {
+        "Murderlon": "write",
+        "RichardLitt": "emeritus",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "redot",
+      "scope": "redotjs/*",
+      "lead": "ChristianMurphy",
+      "members": {
+        "ChristianMurphy": "admin",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "micromark",
+      "scope": "micromark/*",
+      "lead": "wooorm",
+      "members": {
+        "fazouane-marouane": "write",
+        "johno": "write",
+        "Murderlon": "write",
+        "vhf": "emeritus",
+        "wooorm": "admin",
+        "zcei": "emeritus",
+        "zeusdeux": "emeritus"
+      }
+    },
+    {
+      "name": "mdx",
+      "scope": "mdx-js/*",
+      "lead": "johno",
+      "members": {
+        "ahmadawais": "emeritus",
+        "ChristopherBiscardi": "write",
+        "Jarred-Sumner": "write",
+        "johno": "admin",
+        "jxnblk": "emeritus",
+        "mrmrs": "emeritus",
+        "rauchg": "emeritus",
+        "silvenon": "admin",
+        "ticky": "emeritus",
+        "timneutkens": "admin",
+        "wooorm": "admin",
+        "zcei": "emeritus"
+      }
+    },
+    {
+      "name": "vfile",
+      "scope": "vfile/*",
+      "lead": "wooorm",
+      "members": {
+        "ChristianMurphy": "write",
+        "komaeda": "emeritus",
+        "wooorm": "admin"
+      }
+    },
+    {
+      "name": "syntax tree",
+      "scope": "syntax-tree/*",
+      "lead": "wooorm",
+      "members": {
+        "BarryThePenguin": "write",
+        "ChristianMurphy": "write",
+        "kmck": "write",
+        "Murderlon": "write",
+        "wooorm": "admin"
+      }
+    }
+  ]
+}
