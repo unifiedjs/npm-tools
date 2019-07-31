@@ -49,13 +49,7 @@
   },
   "remarkConfig": {
     "plugins": [
-      "preset-wooorm",
-      [
-        "validate-links",
-        {
-          "repository": false
-        }
-      ]
+      "preset-wooorm"
     ]
   }
 }
