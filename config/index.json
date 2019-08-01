@@ -5,6 +5,7 @@
     "rehypejs",
     "retextjs",
     "redotjs",
+    "mdx-js",
     "micromark",
     "syntax-tree",
     "vfile"
