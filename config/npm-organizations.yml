@@ -1,0 +1,33 @@
+# npm org config.
+packages: :org/*
+member: :orgTeam/!emeritus
+admin: core/!emeritus
+owner: :orgTeam/lead
+orgs:
+  - github: unifiedjs
+    npm: unifiedjs
+    unified: unified
+  - github: remarkjs
+    npm: remarkjs
+    unified: remark
+  - github: rehypejs
+    npm: rehypejs
+    unified: rehype
+  - github: retextjs
+    npm: retextjs
+    unified: retext
+  - github: redotjs
+    npm: redotjs
+    unified: redot
+  - github: mdx-js
+    npm: mdx-js
+    unified: mdx
+  - github: micromark
+    npm: micromark
+    unified: micromark
+  - github: syntax-tree
+    npm: syntax-tree
+    unified: syntax tree
+  - github: vfile
+    npm: vfile
+    unified: vfile

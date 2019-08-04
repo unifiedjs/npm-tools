@@ -1,0 +1,9 @@
+# List of npm teams.
+- name: mergers
+  description: '@:org members with read-only rights'
+  permission: read-only
+  member: :orgTeam/merger
+- name: releasers
+  description: '@:org members with read-write rights'
+  permission: read-write
+  member: :orgTeam/releaser
