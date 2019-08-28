@@ -1,7 +1,7 @@
 # npm org config.
 packages: :org/*
-member: :orgTeam/!emeritus
-admin: core/!emeritus
+member: :orgTeam/maintainer
+admin: core/maintainer
 owner: :orgTeam/lead
 orgs:
   - github: unifiedjs
