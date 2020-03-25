@@ -68,7 +68,7 @@ curl "https://registry.npmjs.org/-/org/$org/team" \
 org=remarkjs
 
 curl "https://registry.npmjs.org/-/org/$org/package"
-# {"remark":"write",..."remark-external-links":"write"}
+# {"remark":"write",…"remark-external-links":"write"}
 ```
 
 ### List users in an org
@@ -80,7 +80,7 @@ org=remarkjs
 
 curl "https://registry.npmjs.org/-/org/$org/user" \
   -H "Authorization: Bearer $token"
-# {"wooorm":"owner",..."murderlon":"admin"}
+# {"wooorm":"owner",…"murderlon":"admin"}
 ```
 
 ### Add or change a user in an org
@@ -137,7 +137,7 @@ team=developers
 
 curl "https://registry.npmjs.org/-/team/$org/$team/user" \
   -H "Authorization: Bearer $token"
-# ["wooorm",...]
+# ["wooorm",…]
 ```
 
 ### Add a user to a team
@@ -178,7 +178,7 @@ team=developers
 
 curl "https://registry.npmjs.org/-/team/$org/$team/package" \
   -H "Authorization: Bearer $token"
-# {"remark":"write",..."remark-external-links":"write"}
+# {"remark":"write",…"remark-external-links":"write"}
 ```
 
 ### Add or change a package in a team
@@ -221,7 +221,7 @@ package=remark-parse # Use "@foo%2bar" for scoped packages
 
 curl "https://registry.npmjs.org/$package" \
   -H "Accept: application/vnd.npm.install-v1+json" # Remove for full metadata.
-# {"_id":"remark-parse","_rev":"35-c4b211558296c2be5fad20fd0a7b3b25","name":"remark-parse","maintainers":[...],...}
+# {"_id":"remark-parse","_rev":"35-c4b211558296c2be5fad20fd0a7b3b25","name":"remark-parse","maintainers":[…],…}
 ```
 
 This can be used to find `maintainers`.
@@ -233,7 +233,7 @@ package=remark-parse
 
 curl "https://registry.npmjs.org/-/package/$package/collaborators" \
   -H "Authorization: Bearer $token"
-# {"wooorm":"write",...}
+# {"wooorm":"write",…}
 ```
 
 ### Set maintainers for a package
@@ -278,7 +278,7 @@ curl "https://registry.npmjs.org/-/package/$package/access" \
 ```sh
 curl "https://registry.npmjs.org/-/npm/v1/user" \
   -H "Authorization: Bearer $token"
-# {"tfa":{"pending":false,..."fullname":"Titus Wormer",..."twitter":"wooorm","github":"wooorm"}
+# {"tfa":{"pending":false,…"fullname":"Titus Wormer",…"twitter":"wooorm","github":"wooorm"}
 ```
 
 ### Get a user
@@ -296,7 +296,7 @@ curl "https://registry.npmjs.org/-/user/org.couchdb.user:$user"
 user=wooorm
 
 curl "https://registry.npmjs.org/-/user/$user/package"
-# {"retext-latin":"write",..."remark-bookmarks":"write"}
+# {"retext-latin":"write",…"remark-bookmarks":"write"}
 ```
 
 <!-- Definitions -->

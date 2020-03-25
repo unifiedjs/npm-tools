@@ -1,6 +1,6 @@
 # npm Tools
 
-This projects manages the [unified][] collective organisations on npm:
+This projects manages the [unified][] collective organizations on npm:
 
 *   Check org members, admins, and owners: rights, missing, unexpected
 *   Check repos for the packages in them
