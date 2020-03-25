@@ -27,10 +27,10 @@
     "trough": "^1.0.0"
   },
   "devDependencies": {
-    "prettier": "^1.0.0",
+    "prettier": "^2.0.0",
     "remark-cli": "^7.0.0",
     "remark-preset-wooorm": "^6.0.0",
-    "xo": "^0.24.0"
+    "xo": "^0.28.0"
   },
   "scripts": {
     "start": "node .",
@@ -47,7 +47,10 @@
     "trailingComma": "none"
   },
   "xo": {
-    "prettier": true
+    "prettier": true,
+    "rules": {
+      "unicorn/string-content": "off"
+    }
   },
   "remarkConfig": {
     "plugins": [
