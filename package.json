@@ -18,11 +18,11 @@
     "index.js"
   ],
   "dependencies": {
-    "@octokit/graphql": "^3.0.0",
-    "chalk": "^2.0.0",
+    "@octokit/graphql": "^4.0.0",
+    "chalk": "^3.0.0",
     "dlv": "^1.0.0",
-    "got": "^9.0.0",
     "js-yaml": "^3.0.0",
+    "node-fetch": "^2.0.0",
     "p-series": "^2.0.0",
     "trough": "^1.0.0"
   },
