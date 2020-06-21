@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "@octokit/graphql": "^4.0.0",
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "dlv": "^1.0.0",
     "js-yaml": "^3.0.0",
     "node-fetch": "^2.0.0",
@@ -28,14 +28,14 @@
   },
   "devDependencies": {
     "prettier": "^2.0.0",
-    "remark-cli": "^7.0.0",
-    "remark-preset-wooorm": "^6.0.0",
-    "xo": "^0.28.0"
+    "remark-cli": "^8.0.0",
+    "remark-preset-wooorm": "^7.0.0",
+    "xo": "^0.32.0"
   },
   "scripts": {
     "start": "node .",
     "crawl": "node script/crawl",
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . --write && xo --fix",
     "test": "npm run crawl && npm run format"
   },
   "prettier": {
@@ -49,6 +49,10 @@
   "xo": {
     "prettier": true,
     "rules": {
+      "unicorn/no-reduce": "off",
+      "unicorn/prefer-number-properties": "off",
+      "unicorn/prefer-optional-catch-binding": "off",
+      "unicorn/prefer-set-has": "off",
       "unicorn/string-content": "off"
     }
   },
