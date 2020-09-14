@@ -49,6 +49,7 @@
   "xo": {
     "prettier": true,
     "rules": {
+      "no-await-in-loop": "off",
       "unicorn/no-reduce": "off",
       "unicorn/prefer-number-properties": "off",
       "unicorn/prefer-optional-catch-binding": "off",
