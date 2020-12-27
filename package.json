@@ -28,14 +28,14 @@
   },
   "devDependencies": {
     "prettier": "^2.0.0",
-    "remark-cli": "^8.0.0",
-    "remark-preset-wooorm": "^7.0.0",
-    "xo": "^0.33.0"
+    "remark-cli": "^9.0.0",
+    "remark-preset-wooorm": "^8.0.0",
+    "xo": "^0.36.0"
   },
   "scripts": {
     "start": "node .",
     "crawl": "node script/crawl",
-    "format": "remark . -qfo && prettier . --write && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test": "npm run crawl && npm run format"
   },
   "prettier": {
