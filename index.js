@@ -9,7 +9,7 @@ tools.run(
     // Note: npmToken must be granted by an owner of all orgs.
     npmToken: process.env.NPM_TOKEN,
     // Note: ghToken needs `admin:org` and `repo` scopes.
-    ghToken: process.env.GITHUB_TOKEN,
+    ghToken: process.env.GH_TOKEN || process.env.GITHUB_TOKEN,
     ...config
   },
   done
