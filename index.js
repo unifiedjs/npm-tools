@@ -1,8 +1,8 @@
 'use strict'
 
 const chalk = require('chalk')
-const tools = require('./lib')
-const config = require('./config')
+const tools = require('./lib/index.js')
+const config = require('./config/index.js')
 
 tools.run(
   {
@@ -15,10 +15,10 @@ tools.run(
   done
 )
 
-function done(err) {
-  if (err) {
+function done(error) {
+  if (error) {
     console.log(chalk.red('✖') + ' error')
-    console.error(err)
+    console.error(error)
   } else {
     console.log(chalk.green('✓') + ' done')
   }
