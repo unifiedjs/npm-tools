@@ -8,5 +8,5 @@ export const npmOrgs = load('npm-organizations')
 export const npmTeams = load('npm-teams')
 
 function load(name) {
-  return yaml.safeLoad(fs.readFileSync(path.join('config', name + '.yml')))
+  return yaml.load(fs.readFileSync(path.join('config', name + '.yml')))
 }
