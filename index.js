@@ -1,10 +1,8 @@
-'use strict'
+import chalk from 'chalk'
+import {npmTools} from './lib/index.js'
+import * as config from './config/index.js'
 
-const chalk = require('chalk')
-const tools = require('./lib/index.js')
-const config = require('./config/index.js')
-
-tools.run(
+npmTools.run(
   {
     // Note: npmToken must be granted by an owner of all orgs.
     npmToken: process.env.NPM_TOKEN,

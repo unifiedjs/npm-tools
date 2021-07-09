@@ -1,13 +1,11 @@
-'use strict'
+import fs from 'fs'
+import path from 'path'
+import yaml from 'js-yaml'
 
-const fs = require('fs')
-const path = require('path')
-const yaml = require('js-yaml')
-
-exports.humans = load('unified-humans')
-exports.teams = load('unified-teams')
-exports.npmOrgs = load('npm-organizations')
-exports.npmTeams = load('npm-teams')
+export const humans = load('unified-humans')
+export const teams = load('unified-teams')
+export const npmOrgs = load('npm-organizations')
+export const npmTeams = load('npm-teams')
 
 function load(name) {
   return yaml.safeLoad(fs.readFileSync(path.join('config', name + '.yml')))
