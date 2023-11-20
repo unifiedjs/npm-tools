@@ -19,7 +19,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@octokit/graphql": "^4.0.0",
+    "@octokit/graphql": "^7.0.0",
     "chalk": "^5.0.0",
     "dlv": "^1.0.0",
     "js-yaml": "^4.0.0",
@@ -28,15 +28,15 @@
     "trough": "^2.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.0.0",
+    "prettier": "^3.0.0",
     "remark-cli": "^10.0.0",
     "remark-preset-wooorm": "^9.0.0",
-    "xo": "^0.50.0"
+    "xo": "^0.56.0"
   },
   "scripts": {
     "start": "node .",
     "crawl": "node script/crawl",
-    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
+    "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
     "test": "npm run crawl && npm run format"
   },
   "prettier": {
@@ -52,9 +52,11 @@
     "rules": {
       "no-await-in-loop": "off",
       "unicorn/no-reduce": "off",
+      "unicorn/prefer-at": "off",
       "unicorn/prefer-number-properties": "off",
       "unicorn/prefer-optional-catch-binding": "off",
       "unicorn/prefer-set-has": "off",
+      "unicorn/prefer-string-replace-all": "off",
       "unicorn/string-content": "off"
     }
   },
