@@ -1,23 +1,10 @@
 {
-  "private": true,
-  "name": "npm-tools",
-  "version": "0.0.0",
-  "description": "npm tools for unified",
-  "license": "MIT",
-  "keywords": [],
-  "repository": "unifiedjs/npm-tools",
-  "bugs": "https://github.com/unifiedjs/npm-tools/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "bugs": "https://github.com/unifiedjs/npm-tools/issues",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
-  "type": "module",
-  "main": "index.js",
-  "files": [
-    "lib/",
-    "config/",
-    "index.js"
-  ],
+  "description": "npm tools for unified",
   "dependencies": {
     "@octokit/graphql": "^8.0.0",
     "chalk": "^5.0.0",
@@ -33,36 +20,42 @@
     "remark-preset-wooorm": "^10.0.0",
     "xo": "^0.59.0"
   },
-  "scripts": {
-    "start": "node .",
-    "crawl": "node script/crawl",
-    "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
-    "test": "npm run crawl && npm run format"
-  },
+  "files": [
+    "config/",
+    "lib/",
+    "index.js"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "npm-tools",
   "prettier": {
-    "tabWidth": 2,
-    "useTabs": false,
-    "singleQuote": true,
     "bracketSpacing": false,
     "semi": false,
-    "trailingComma": "none"
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
+  },
+  "private": true,
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-wooorm"
+    ]
+  },
+  "repository": "unifiedjs/npm-tools",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "crawl": "node --conditions developments script/crawl.js",
+    "format": "remark --frail --quiet --output -- . && prettier --log-level warn --write -- . && xo --fix",
+    "start": "node --conditions developments index.js",
+    "test": "npm run crawl && npm run format"
   },
   "xo": {
     "prettier": true,
     "rules": {
-      "no-await-in-loop": "off",
-      "unicorn/no-reduce": "off",
-      "unicorn/prefer-at": "off",
-      "unicorn/prefer-number-properties": "off",
-      "unicorn/prefer-optional-catch-binding": "off",
-      "unicorn/prefer-set-has": "off",
-      "unicorn/prefer-string-replace-all": "off",
-      "unicorn/string-content": "off"
+      "no-await-in-loop": "off"
     }
-  },
-  "remarkConfig": {
-    "plugins": [
-      "preset-wooorm"
-    ]
   }
 }
