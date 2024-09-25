@@ -1,12 +1,22 @@
 import fs from 'node:fs'
-import path from 'node:path'
+// Note: to do: switch.
 import yaml from 'js-yaml'
 
+// Name of the whole collective.
+export const collective = 'unifiedjs'
+
 export const humans = load('unified-humans')
-export const teams = load('unified-teams')
 export const npmOrgs = load('npm-organizations')
 export const npmTeams = load('npm-teams')
+export const teams = load('unified-teams')
 
+/**
+ *
+ * @param {string} name
+ * @returns {unknown}
+ */
 function load(name) {
-  return yaml.load(fs.readFileSync(path.join('config', name + '.yml')))
+  const url = new URL(name + '.yml', import.meta.url)
+  const document = fs.readFileSync(url, 'utf8')
+  return yaml.load(document)
 }

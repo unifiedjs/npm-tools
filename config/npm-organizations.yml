@@ -1,33 +1,33 @@
 # npm org config.
-packages: :org/*
-member: :orgTeam/maintainer
 admin: core/maintainer
-owner: :orgTeam/lead
+member: :orgTeam/maintainer
 orgs:
-  - github: unifiedjs
-    npm: unifiedjs
-    unified: unified
-  - github: remarkjs
-    npm: remarkjs
-    unified: remark
-  - github: rehypejs
-    npm: rehypejs
-    unified: rehype
-  - github: retextjs
-    npm: retextjs
-    unified: retext
-  - github: redotjs
-    npm: redotjs
-    unified: redot
   - github: mdx-js
     npm: mdx-js
     unified: mdx
   - github: micromark
     npm: micromark
     unified: micromark
+  - github: redotjs
+    npm: redotjs
+    unified: redot
+  - github: rehypejs
+    npm: rehypejs
+    unified: rehype
+  - github: remarkjs
+    npm: remarkjs
+    unified: remark
+  - github: retextjs
+    npm: retextjs
+    unified: retext
   - github: syntax-tree
     npm: syntax-tree
     unified: syntax tree
+  - github: unifiedjs
+    npm: unifiedjs
+    unified: unified
   - github: vfile
     npm: vfile
     unified: vfile
+owner: :orgTeam/lead
+packages: :org/*

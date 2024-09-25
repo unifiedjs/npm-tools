@@ -1,4 +1,7 @@
+*.d.ts.map
+*.d.ts
+*.tsbuildinfo
 .DS_Store
+config/unified*.yml
 node_modules/
 yarn.lock
-config/unified*.yml

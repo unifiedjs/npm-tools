@@ -5,15 +5,19 @@ import * as config from './config/index.js'
 
 npmTools.run(
   {
-    // Note: npmToken must be granted by an owner of all orgs.
-    npmToken: process.env.NPM_TOKEN,
     // Note: ghToken needs `admin:org` and `repo` scopes.
     ghToken: process.env.GH_TOKEN || process.env.GITHUB_TOKEN,
+    // Note: npmToken must be granted by an owner of all orgs.
+    npmToken: process.env.NPM_TOKEN,
     ...config
   },
   done
 )
 
+/**
+ * @param {unknown} error
+ * @returns {undefined}
+ */
 function done(error) {
   if (error) {
     console.log(chalk.red('✖') + ' error')

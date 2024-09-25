@@ -7,6 +7,9 @@ const base = 'https://raw.githubusercontent.com/unifiedjs/collective/HEAD/data/'
 get('humans.yml')
 get('teams.yml')
 
+/**
+ * @param {string} filename
+ */
 function get(filename) {
   https.get(base + filename, (response) => {
     response.pipe(
