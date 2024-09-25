@@ -8,8 +8,6 @@
     "exactOptionalPropertyTypes": true,
     "lib": ["es2022"],
     "module": "node16",
-    // To do: remove after `node-fetch` -> `undici`.
-    "skipLibCheck": true,
     "strict": true,
     "target": "es2022"
   },

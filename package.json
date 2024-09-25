@@ -10,9 +10,9 @@
     "chalk": "^5.0.0",
     "dlv": "^1.0.0",
     "js-yaml": "^4.0.0",
-    "node-fetch": "^3.0.0",
     "p-series": "^3.0.0",
-    "trough": "^2.0.0"
+    "trough": "^2.0.0",
+    "undici": "^6.19.8"
   },
   "devDependencies": {
     "@types/dlv": "^1.0.0",
