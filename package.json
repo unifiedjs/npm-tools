@@ -10,7 +10,6 @@
     "chalk": "^5.0.0",
     "dlv": "^1.0.0",
     "p-series": "^3.0.0",
-    "trough": "^2.0.0",
     "undici": "^6.0.0",
     "yaml": "^2.0.0"
   },
@@ -67,6 +66,7 @@
   "xo": {
     "prettier": true,
     "rules": {
+      "complexity": "off",
       "no-await-in-loop": "off"
     }
   }
