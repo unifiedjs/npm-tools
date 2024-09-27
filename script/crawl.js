@@ -9,9 +9,12 @@ get('teams.yml')
 
 /**
  * @param {string} filename
+ *   Name.
+ * @returns {undefined}
+ *   Nothing.
  */
 function get(filename) {
-  https.get(base + filename, (response) => {
+  https.get(base + filename, function (response) {
     response.pipe(
       fs.createWriteStream(path.join('config', 'unified-' + filename))
     )

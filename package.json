@@ -50,8 +50,6 @@
     ]
   },
   "repository": "unifiedjs/npm-tools",
-  "type": "module",
-  "version": "0.0.0",
   "scripts": {
     "build": "tsc --build --clean && tsc --build && type-coverage",
     "crawl": "node --conditions developments script/crawl.js",
@@ -63,11 +61,12 @@
     "atLeast": 100,
     "strict": true
   },
+  "type": "module",
+  "version": "0.0.0",
   "xo": {
     "prettier": true,
     "rules": {
-      "complexity": "off",
-      "no-await-in-loop": "off"
+      "complexity": "off"
     }
   }
 }
