@@ -20,8 +20,8 @@ In the future we hope to allow other collectives to use this as well.
 These tools work well with our [`github-tools`][github-tools].
 The plan is to merge them together in some pluggable way in the future.
 
-[unified]: https://github.com/unifiedjs
-
 [github-tools]: https://github.com/unifiedjs/github-tools
 
 [npm-md]: npm.md
+
+[unified]: https://github.com/unifiedjs

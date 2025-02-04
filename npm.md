@@ -301,6 +301,6 @@ curl "https://registry.npmjs.org/-/user/$user/package"
 
 <!-- Definitions -->
 
-[registry]: https://github.com/npm/registry
-
 [libnpmaccess]: https://github.com/npm/libnpmaccess/blob/latest/index.js
+
+[registry]: https://github.com/npm/registry
