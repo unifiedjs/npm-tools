@@ -29,11 +29,13 @@
   "files": [
     "config/",
     "lib/",
+    "index.d.ts.map",
+    "index.d.ts",
     "index.js"
   ],
   "keywords": [],
   "license": "MIT",
-  "main": "index.js",
+  "exports": "./index.js",
   "name": "npm-tools",
   "prettier": {
     "bracketSpacing": false,
